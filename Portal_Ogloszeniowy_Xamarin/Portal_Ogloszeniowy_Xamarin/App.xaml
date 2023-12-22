@@ -3,6 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Portal_Ogloszeniowy_Xamarin.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="White"></Setter>
+                <Setter Property="BarTextColor" Value="#40356F"></Setter>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

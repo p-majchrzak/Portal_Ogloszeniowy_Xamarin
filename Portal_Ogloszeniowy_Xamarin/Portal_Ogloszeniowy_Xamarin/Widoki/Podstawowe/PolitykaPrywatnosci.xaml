@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe.PolitykaPrywatnosci" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Background="#F7F7F7">
+            <StackLayout BackgroundColor="White">
+                <Image HeightRequest="50" WidthRequest="50" Source="logo.png"></Image>
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="PowrotBTN" Clicked="PowrotBTN_Clicked" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="40" Text="Powrót" WidthRequest="100"></Button>
+                    <Label FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Polityka prywatności" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+                </StackLayout>
+            </StackLayout>
+            <ScrollView x:Name="politykaStack">
+                
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe.WyborTypuKontaPrzyRejestracji" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Orientation="Vertical">
+                <Image WidthRequest="90" HeightRequest="90" Source="logo.png"></Image>
+                <Label Text="Czego szukasz?" FontSize="25" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"></Label>
+                <StackLayout Margin="0,10,0,0" Orientation="Horizontal">
+                    <Button Clicked="PracodawcaBTN_Clicked" Margin="2" x:Name="PracodawcaBTN" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" FontSize="10" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Szukam pracowników" WidthRequest="140"></Button>
+                    <Button Clicked="PracownikBTN_Clicked" Margin="2" x:Name="PracownikBTN" FontAttributes="Bold" Background="#645FCE" BorderColor="#645FCE" FontSize="10" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Szukam pracy" WidthRequest="140"></Button>
+                </StackLayout>
+                <Button Margin="2" Clicked="PowrotBTN_Clicked" HorizontalOptions="Center" x:Name="PowrotBTN" FontAttributes="Bold" Background="#A29FE2" BorderColor="#A29FE2" FontSize="10" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Powrót" WidthRequest="140"></Button>
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
