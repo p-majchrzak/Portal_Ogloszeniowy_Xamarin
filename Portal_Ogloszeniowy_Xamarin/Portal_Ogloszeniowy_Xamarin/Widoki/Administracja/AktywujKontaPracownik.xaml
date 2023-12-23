@@ -16,7 +16,7 @@
                                 </ViewCell.ContextActions>
                                 <StackLayout Orientation="Horizontal">
                                     <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="{Binding Imie}"></Label>
-                                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="{Binding Nazwisko}"></Label>
+                                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="{Binding Naziwsko}"></Label>
                                     <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="{Binding Email}"></Label>
                                 </StackLayout>
                             </ViewCell>

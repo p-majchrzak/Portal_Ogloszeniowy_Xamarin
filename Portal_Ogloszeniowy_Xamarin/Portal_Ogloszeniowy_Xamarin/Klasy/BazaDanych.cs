@@ -20,6 +20,7 @@ namespace Portal_Ogloszeniowy_Xamarin.Klasy
             bazaDanych.CreateTable<PracownikKlasa>();
             bazaDanych.CreateTable<Zgloszenie>();
             bazaDanych.CreateTable<Newsletter>();
+            bazaDanych.CreateTable<Zapisane>();
         }
         public int Zapisz<T>(T objekt)
         {

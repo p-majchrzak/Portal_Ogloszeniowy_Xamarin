@@ -8,7 +8,7 @@
                 <StackLayout>
                     <StackLayout Margin="10,10,10,5" HorizontalOptions="CenterAndExpand">
                         <Frame CornerRadius="90">
-                            <Image x:Name="zdjecie" Source="logo.png" WidthRequest="150" HeightRequest="150"></Image>
+                            <Entry x:Name="zdjecie" FontSize="17" HorizontalOptions="Center"></Entry>
                         </Frame>
                     </StackLayout>
                     <Frame CornerRadius="10" Margin="10,5,10,5">

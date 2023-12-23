@@ -4,9 +4,37 @@
              x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik.ZapisaneOferty">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <CollectionView x:Name="listaOgloszen" SelectionMode="Single">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <SwipeView x:Name="suwak">
+                            <Frame Margin="5" BackgroundColor="White" BorderColor="#40356F">
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout Margin="10" Orientation="Vertical"  HorizontalOptions="StartAndExpand">
+                                        <Label TextColor="Black" FontSize="14" FontAttributes="Bold" Text="{Binding NazwaStanowiska}"></Label>
+                                        <Label TextColor="Black" FontSize="12" Text="{Binding WymiarZatrudnienia}"></Label>
+                                    </StackLayout>
+                                    <StackLayout Margin="10" Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                                        <Label TextColor="Black" FontSize="12" Text="{Binding DniPracy}"></Label>
+                                        <Label TextColor="Black" FontSize="12" Text="{Binding GodzinyPracy}"></Label>
+                                    </StackLayout>
+                                    <StackLayout Margin="0,0,10,0"  HorizontalOptions="EndAndExpand">
+                                        <Label VerticalOptions="CenterAndExpand" TextColor="Black" FontSize="12" Text="{Binding WidelkiWynagrodzenia}"></Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                            <SwipeView.LeftItems>
+                                <SwipeItem x:Name="Usun" Clicked="Usun_Clicked" BackgroundColor="#40356F"  Text="Usuń"></SwipeItem>
+                            </SwipeView.LeftItems>
+                            <SwipeView.RightItems>
+                                <SwipeItem x:Name="Zobacz" Clicked="Zobacz_Clicked" BackgroundColor="#40356F" Text="Zobacz"></SwipeItem>
+                            </SwipeView.RightItems>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
