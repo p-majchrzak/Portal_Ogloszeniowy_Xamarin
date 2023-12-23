@@ -4,9 +4,13 @@
              x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Administracja.DodajAdministratora">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame CornerRadius="10" BackgroundColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout WidthRequest="200">
+                    <Entry x:Name="login" Placeholder="Podaj login"></Entry>
+                    <Entry IsPassword="True" x:Name="haslo" Placeholder="Podaj hasło"></Entry>
+                    <Button x:Name="Dodaj" Clicked="Dodaj_Clicked" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Dodaj" WidthRequest="140"></Button>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

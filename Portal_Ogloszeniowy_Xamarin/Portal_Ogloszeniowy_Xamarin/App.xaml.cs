@@ -12,6 +12,9 @@ namespace Portal_Ogloszeniowy_Xamarin
 {
     public partial class App : Application
     {
+        public static PracownikKlasa GlobalnyPracownik = null;
+        public static Firma GlobalnaFirma = null;
+        public static Administrator GlobalnyAdministrator = null;
         public App()
         {
             InitializeComponent();

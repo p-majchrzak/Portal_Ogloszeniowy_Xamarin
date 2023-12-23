@@ -4,9 +4,26 @@
              x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Administracja.AktywujKontaPracodawca" Title="Aktywuj konta pracodawca">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label HorizontalOptions="Center" FontSize="16" Margin="5" FontAttributes="Bold" Text="Lista firm oczekujących na aktywacje konta"></Label>
+            <ScrollView>
+                <ListView x:Name="lista">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Aktywuj konto" x:Name="Akceptuj" Clicked="Akceptuj_Clicked"></MenuItem>
+                                    <MenuItem Text="Odrzuć konto" x:Name="Odrzuć" Clicked="Odrzuć_Clicked"></MenuItem>
+                                </ViewCell.ContextActions>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="{Binding Nazwa}"></Label>
+                                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="{Binding Adres}"></Label>
+                                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="{Binding Email}"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

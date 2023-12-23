@@ -13,7 +13,7 @@ namespace Portal_Ogloszeniowy_Xamarin.Klasy
         public int Ogloszenie_ID { get; set; }
         public int Pracownik_ID { get; set; }
         public Zgloszenie() { }
-        public Zgloszenie(Ogloszenie ogloszenie, Pracownik pracownik)
+        public Zgloszenie(Ogloszenie ogloszenie, PracownikKlasa pracownik)
         {
             Ogloszenie_ID = ogloszenie.ID;
             Pracownik_ID = pracownik.ID;
