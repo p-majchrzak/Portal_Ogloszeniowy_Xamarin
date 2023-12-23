@@ -15,6 +15,9 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe
         public StronaWyboruRejestracjiLubLogowania()
         {
             InitializeComponent();
+            App.GlobalnyPracownik = null;
+            App.GlobalnyAdministrator = null;
+            App.GlobalnaFirma = null;
         }
 
         private void PolitykaPrywatnosciLink_Tapped(object sender, EventArgs e)

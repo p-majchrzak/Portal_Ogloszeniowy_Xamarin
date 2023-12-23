@@ -4,9 +4,44 @@
              x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracodawca.DodajOgloszenie">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <StackLayout>
+                    <Label FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" Text="Stanowisko"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj nazwę stanowiska:"/>
+                    <Entry x:Name="nazwaStanowisko" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj poziom stanowiska:"/>
+                    <Entry x:Name="poziomStanowiska" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" Text="Umowa"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj rodzaj umowy:"/>
+                    <Entry x:Name="rodzajUmowy" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj wymiar zatrudnienia:"/>
+                    <Entry x:Name="wymiarZatrudnienia" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" Text="Praca"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj rodzaj pracy:"/>
+                    <Entry x:Name="rodzajPracy" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj widełki wynagrodzenia:"/>
+                    <Entry x:Name="widelkiWynagrodzenia" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj dni pracy:"/>
+                    <Entry x:Name="dniPracy" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj godziny pracy:"/>
+                    <Entry x:Name="godzinyPracy" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj datę ważności ogłoszenia:"/>
+                    <DatePicker x:Name="dataWaznosci" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj kategorię ogłoszenia:"/>
+                    <Picker x:Name="kategoria" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj zakres obowiązków:"/>
+                    <Entry x:Name="obowiazki" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label FontSize="20" HorizontalOptions="Center" Text="Podaj benefity:"/>
+                    <Entry x:Name="benefity" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50"/>
+                    <Label HeightRequest="20"/>
+                    <Grid>
+                        <Button x:Name="Dodaj" Clicked="Dodaj_Clicked" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Dodaj" WidthRequest="200"></Button>
+                        <Button x:Name="Edytuj" Clicked="Edytuj_Clicked" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Edytuj" WidthRequest="200"></Button>
+                    </Grid>
+                    <Label FontSize="20"></Label>
+                </StackLayout>
+            </ScrollView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

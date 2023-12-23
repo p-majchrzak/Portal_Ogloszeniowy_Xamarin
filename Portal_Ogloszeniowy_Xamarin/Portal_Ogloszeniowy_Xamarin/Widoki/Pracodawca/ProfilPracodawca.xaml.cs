@@ -15,6 +15,10 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Pracodawca
         public ProfilPracodawca()
         {
             InitializeComponent();
+            zdjecie.Source = App.GlobalnaFirma.Zdjecie;
+            nazwaFirmy.Text = App.GlobalnaFirma.Nazwa;
+            adresFirmy.Text = App.GlobalnaFirma.Adres;
+            emailFirmy.Text = App.GlobalnaFirma.Email;
         }
     }
 }
