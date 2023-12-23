@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Portal_Ogloszeniowy_Xamarin.Widoki.Pracodawca;
 using Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik;
+using Portal_Ogloszeniowy_Xamarin.Widoki.Administracja;
 
 namespace Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe
 {
@@ -25,7 +27,7 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe
 
         private void LogowanieBTN_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MenuPracownik());
+            Navigation.PushAsync(new MenuAdmin());
         }
     }
 }

@@ -2,11 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik.StronaGlownaPracownik" Title="Strona główna">
-   
+
     <ContentPage.Content>
-        
         <StackLayout>
-            
+            <SearchBar Placeholder="Wpisz nazwę oferty"></SearchBar>
+            <ListView x:Name="listaOgloszen">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
