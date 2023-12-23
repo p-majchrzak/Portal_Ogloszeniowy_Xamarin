@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracodawca.MenuPracodawca"
+             xmlns:pages="clr-namespace:Portal_Ogloszeniowy_Xamarin.Widoki.Pracodawca" NavigationPage.HasNavigationBar="False">
+  <FlyoutPage.Flyout>
+    <pages:MenuPracodawcaFlyout x:Name="FlyoutPage" />
+  </FlyoutPage.Flyout>
+  <FlyoutPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <pages:StronaGlownaPracodawca />
+      </x:Arguments>
+    </NavigationPage>
+  </FlyoutPage.Detail>
+</FlyoutPage>

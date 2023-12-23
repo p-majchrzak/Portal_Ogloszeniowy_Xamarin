@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe.PodsumowanieRejestracji" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#F7F7F7">
+            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                <Image HorizontalOptions="CenterAndExpand" Source="logo.png" WidthRequest="70" HeightRequest="70"></Image>
+            </StackLayout>
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Label Text="Witaj xyz!" FontSize="30" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                <Label FontSize="13" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Text="Gdy twoje konto zostanie aktywowane, potrzymasz wiadomość"></Label>
+                <Label FontSize="13" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Text="na pocztę którą podałeś podczas rejestracji."></Label>
+                <Label Margin="0,0,0,60" FontSize="13" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Text="Życzymy powodzenia w znalezieniu pracy, zespół Poszukujemy."></Label>
+                <Button HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" x:Name="Powrot" Clicked="Powrot_Clicked" FontSize="15" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" TextColor="White" Text="Wróć do strony początkowej" WidthRequest="220" HeightRequest="40"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

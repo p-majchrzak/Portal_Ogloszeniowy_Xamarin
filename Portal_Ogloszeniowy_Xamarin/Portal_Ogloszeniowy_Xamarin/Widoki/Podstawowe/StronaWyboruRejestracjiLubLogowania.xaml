@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe.StronaWyboruRejestracjiLubLogowania" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid Background="White">
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Orientation="Vertical">
+                <Image HeightRequest="150" WidthRequest="200" Source="logo.png"></Image>
+                <Label TextColor="Black" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Witamy w aplikacji Poszukujemy!" Margin="0,0,0,10"></Label>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button x:Name="RejestracjaBTN" Clicked="RejestracjaBTN_Clicked" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Zarejestruj się" WidthRequest="140"></Button>
+                    <Button x:Name="LogowanieBTN" Clicked="LogowanieBTN_Clicked" FontAttributes="Bold" Background="#645FCE" BorderColor="#645FCE" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Zaloguj się" WidthRequest="140"></Button>
+                </StackLayout>
+                <Label FontSize="12" Margin="0,20,0,0" HorizontalOptions="Center" Text="Twoje dane będą przetwarzane zgodnie z naszą"></Label>
+                <Label FontSize="12" HorizontalOptions="Center" Text="Polityką Prywatności i Warunkami świadczenia usług." TextColor="#0066CC">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="PolitykaPrywatnosciLink" Tapped="PolitykaPrywatnosciLink_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

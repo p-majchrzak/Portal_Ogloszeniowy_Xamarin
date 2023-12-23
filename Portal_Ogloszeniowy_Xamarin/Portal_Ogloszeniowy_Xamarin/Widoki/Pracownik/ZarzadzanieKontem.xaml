@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik.ZarzadzanieKontem">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Margin="10,10,10,5" HorizontalOptions="CenterAndExpand">
+                        <Frame CornerRadius="90">
+                            <Image x:Name="zdjecie" Source="logo.png" WidthRequest="150" HeightRequest="150"></Image>
+                        </Frame>
+                    </StackLayout>
+                    <Frame CornerRadius="10" Margin="10,5,10,5">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Entry FontAttributes="Bold" x:Name="imie" HorizontalOptions="Center" FontSize="17" Text="imie"></Entry>
+                                <Entry FontAttributes="Bold" x:Name="nazwisko" HorizontalOptions="Center" FontSize="17" Text="nazwisko"></Entry>
+                            </StackLayout>
+                            <DatePicker x:Name="dataUrodzenia" HorizontalOptions="Center" FontSize="15" WidthRequest="130"></DatePicker>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" Margin="10,5,10,5">
+                        <StackLayout>
+                            <Label HorizontalOptions="Center" Text="OPIS PROFILU" FontSize="17" FontAttributes="Bold"></Label>
+                            <Entry x:Name="opis" HorizontalOptions="Center" FontSize="15" WidthRequest="200"></Entry>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" Margin="10,5,10,5">
+                        <StackLayout>
+                            <Label HorizontalOptions="Center" Text="PODSTAWOWE DANE" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label FontSize="15" Text="Adres email: "></Label>
+                            <Entry x:Name="email" HorizontalOptions="Center" FontSize="15" WidthRequest="200"></Entry>
+                            <Label FontSize="15" Text="Numer telefonu: "></Label>
+                            <Entry x:Name="numerTelefonu" HorizontalOptions="Center" FontSize="15" WidthRequest="200"></Entry>
+                            <Label FontSize="15" Text="Adres zamieszkania: "></Label>
+                            <Entry x:Name="adresZamieszkania" HorizontalOptions="Center" FontSize="15" WidthRequest="200"></Entry>
+                            <Label HorizontalOptions="Center" Text="AKTUALNE STANOWISKO" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label FontSize="15" Text="Aktualne stanowisko: "></Label>
+                            <Entry x:Name="aktualneStanowisko" HorizontalOptions="Center" FontSize="15" WidthRequest="200"></Entry>
+                            <Label FontSize="15" Text="Opis: "></Label>
+                            <Entry x:Name="opisStanowiska" HorizontalOptions="Center" FontSize="15" WidthRequest="200"></Entry>
+                            <Label HorizontalOptions="Center" Text="PODSUMOWANIE ZAWODOWE" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label FontSize="15" Text="Opis: "></Label>
+                            <Entry x:Name="podsumowanieZawodoweOpis" HorizontalOptions="Center" FontSize="15" WidthRequest="200"></Entry>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" Margin="10,5,10,5">
+                        <StackLayout>
+                            <Label HorizontalOptions="Center" Text="WYKSZTAŁCENIE" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label FontSize="15" Text="Opis: "></Label>
+                            <Entry x:Name="wyksztalcenie" HorizontalOptions="Center" FontSize="15" WidthRequest="200"></Entry>
+                            <Label HorizontalOptions="Center" Text="ZNAJOMOŚĆ JĘZYKÓW" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label FontSize="15" Text="Języki-Poziom: "></Label>
+                            <Entry x:Name="jezyk" HorizontalOptions="Center" FontSize="15" WidthRequest="200"></Entry>
+                            <Label HorizontalOptions="Center" Text="DODATKOWE UMIEJĘTNOŚCI/KURSY" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label FontSize="15" Text="Opis: "></Label>
+                            <Entry x:Name="umiejetnosci" HorizontalOptions="Center" FontSize="15" WidthRequest="200"></Entry>
+                            <Label HorizontalOptions="Center" Text="LINKI" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label FontSize="15" Text="Linki: "></Label>
+                            <Entry x:Name="linki" HorizontalOptions="Center" FontSize="15" WidthRequest="200"></Entry>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" Margin="10,5,10,5">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Button Margin="2" HorizontalOptions="Center" x:Name="ZapiszBTN" Clicked="ZapiszBTN_Clicked" FontAttributes="Bold" Background="#A29FE2" BorderColor="#A29FE2" FontSize="10" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Zapisz zmiany" WidthRequest="100"></Button>
+                            <Button Margin="2" x:Name="ZmienHasloBTN" Clicked="ZmienHasloBTN_Clicked" FontAttributes="Bold" Background="#645FCE" BorderColor="#645FCE" FontSize="10" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Zmień hasło" WidthRequest="100"></Button>
+                            <Button Margin="2" x:Name="UsunKontoBTN" Clicked="UsunKontoBTN_Clicked" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" FontSize="10" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Usuń konto" WidthRequest="100"></Button>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

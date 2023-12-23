@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik.WyswietlMojProfil">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Margin="10,10,10,5" HorizontalOptions="CenterAndExpand">
+                        <Frame CornerRadius="90">
+                            <Image x:Name="zdjecie" Source="logo.png" WidthRequest="150" HeightRequest="150"></Image>
+                        </Frame>
+                    </StackLayout>
+                    <Frame CornerRadius="10" Margin="10,5,10,5">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Label FontAttributes="Bold" x:Name="imie" HorizontalOptions="Center" FontSize="17" Text="imie"></Label>
+                                <Label FontAttributes="Bold" x:Name="nazwisko" HorizontalOptions="Center" FontSize="17" Text="nazwisko"></Label>
+                            </StackLayout>
+                            <Label x:Name="dataUrodzenia" HorizontalOptions="Center" FontSize="15" Text="01.01.0000"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" Margin="10,5,10,5">
+                        <StackLayout>
+                            <Label HorizontalOptions="Center" Text="OPIS PROFILU" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="opis" HorizontalOptions="Center" FontSize="15" Text="opis"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" Margin="10,5,10,5">
+                        <StackLayout>
+                            <Label HorizontalOptions="Center" Text="PODSTAWOWE DANE" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="email" FontSize="15" Text="Adres email: "></Label>
+                            <Label x:Name="numerTelefonu" FontSize="15" Text="Numer telefonu: "></Label>
+                            <Label x:Name="adresZamieszkania" FontSize="15" Text="Adres zamieszkania: "></Label>
+                            <Label HorizontalOptions="Center" Text="AKTUALNE STANOWISKO" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="aktualneStanowisko" FontSize="15" Text="Aktualne stanowisko: "></Label>
+                            <Label x:Name="opisStanowiska" FontSize="15" Text="Opis: "></Label>
+                            <Label HorizontalOptions="Center" Text="PODSUMOWANIE ZAWODOWE" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="podsumowanieZawodoweOpis" FontSize="15" Text="Opis: "></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" Margin="10,5,10,5">
+                        <StackLayout>
+                            <Label HorizontalOptions="Center" Text="WYKSZTAŁCENIE" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="wyksztalcenie" FontSize="15" Text="Opis: "></Label>
+                            <Label HorizontalOptions="Center" Text="ZNAJOMOŚĆ JĘZYKÓW" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="jezyk" FontSize="15" Text="Języki-Poziom: "></Label>
+                            <Label HorizontalOptions="Center" Text="DODATKOWE UMIEJĘTNOŚCI/KURSY" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="umiejetnosci" FontSize="15" Text="Opis: "></Label>
+                            <Label HorizontalOptions="Center" Text="LINKI" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="linki" FontSize="15" Text="Linki: "></Label>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
