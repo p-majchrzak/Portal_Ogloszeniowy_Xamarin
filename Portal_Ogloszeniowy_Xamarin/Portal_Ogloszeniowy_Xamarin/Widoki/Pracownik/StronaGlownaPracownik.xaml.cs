@@ -79,7 +79,7 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik
             }
             else
             {
-                Odswiez();
+                listaOgloszen.ItemsSource = new List<Ogloszenie>();
             }
         }
     }
