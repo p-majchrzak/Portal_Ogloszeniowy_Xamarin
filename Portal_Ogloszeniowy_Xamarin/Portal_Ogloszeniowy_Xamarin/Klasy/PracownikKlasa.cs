@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Portal_Ogloszeniowy_Xamarin.Klasy
 {
-    public class Pracownik
+    public class PracownikKlasa
     {
         [AutoIncrement, PrimaryKey]
         public int ID { get; set; }
@@ -28,8 +28,8 @@ namespace Portal_Ogloszeniowy_Xamarin.Klasy
 
         public bool AktywneKonto { get; set; }
 
-        public Pracownik() { }
-        public Pracownik(string imie, string naziwsko, DateTime? dataUrodzenia, string email, int numer, string zdjecie, string adresZamieszkania,
+        public PracownikKlasa() { }
+        public PracownikKlasa(string imie, string naziwsko, DateTime? dataUrodzenia, string email, int numer, string zdjecie, string adresZamieszkania,
         string nazwaStanowiska, string opisStanowiska, string doswiadczenieZawodowe, string wyksztalcenie, string znajomoscJezykow,
         string dodatkoweUmiejetnosci, string linki, string opis, string haslo, bool aktywneKonto)
         {

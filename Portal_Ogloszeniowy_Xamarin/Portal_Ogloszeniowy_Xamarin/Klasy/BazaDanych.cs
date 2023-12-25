@@ -17,9 +17,10 @@ namespace Portal_Ogloszeniowy_Xamarin.Klasy
             bazaDanych.CreateTable<Firma>();
             bazaDanych.CreateTable<Kategorie>();
             bazaDanych.CreateTable<Ogloszenie>();
-            bazaDanych.CreateTable<Pracownik>();
+            bazaDanych.CreateTable<PracownikKlasa>();
             bazaDanych.CreateTable<Zgloszenie>();
             bazaDanych.CreateTable<Newsletter>();
+            bazaDanych.CreateTable<Zapisane>();
         }
         public int Zapisz<T>(T objekt)
         {

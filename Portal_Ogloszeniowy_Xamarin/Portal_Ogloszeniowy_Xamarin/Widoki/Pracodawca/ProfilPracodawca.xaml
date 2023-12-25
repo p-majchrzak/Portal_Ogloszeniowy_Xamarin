@@ -4,9 +4,16 @@
              x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracodawca.ProfilPracodawca">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Frame BackgroundColor="White" CornerRadius="10">
+                    <StackLayout>
+                        <Image HorizontalOptions="CenterAndExpand" x:Name="zdjecie" WidthRequest="90" HeightRequest="90"></Image>
+                        <Label HorizontalOptions="CenterAndExpand" x:Name="nazwaFirmy" FontSize="24" FontAttributes="Bold"></Label>
+                        <Label HorizontalOptions="CenterAndExpand" x:Name="adresFirmy" FontSize="24"></Label>
+                        <Label  HorizontalOptions="CenterAndExpand" x:Name="emailFirmy" FontSize="20"></Label>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

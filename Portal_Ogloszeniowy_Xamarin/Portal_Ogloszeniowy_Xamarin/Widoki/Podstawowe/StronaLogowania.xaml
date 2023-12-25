@@ -6,8 +6,8 @@
         <Grid BackgroundColor="White">
             <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Orientation="Vertical">
                 <Image WidthRequest="70" HeightRequest="70" Source="logo.png"></Image>
-                <Entry Placeholder="Podaj email" WidthRequest="200" HeightRequest="60"></Entry>
-                <Entry IsPassword="True" Placeholder="Podaj hasło" WidthRequest="200" HeightRequest="60"></Entry>
+                <Entry x:Name="email" Placeholder="Podaj email" WidthRequest="200" HeightRequest="60"></Entry>
+                <Entry x:Name="haslo" IsPassword="True" Placeholder="Podaj hasło" WidthRequest="200" HeightRequest="60"></Entry>
                 <StackLayout Orientation="Horizontal">
                     <Button x:Name="PowrotBTN" Clicked="PowrotBTN_Clicked" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Powrót" WidthRequest="140"></Button>
                     <Button x:Name="LogowanieBTN" Clicked="LogowanieBTN_Clicked" FontAttributes="Bold" Background="#645FCE" BorderColor="#645FCE" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Zaloguj się" WidthRequest="140"></Button>
@@ -16,7 +16,7 @@
                     <Label Text="Nie pamiętasz hasła?"></Label>
                     <Label HorizontalOptions="Center" Text="Odzyskaj je." TextColor="#0066CC">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer/>
+                            <TapGestureRecognizer x:Name="Link" Tapped="Link_Tapped"/>
                         </Label.GestureRecognizers>
                     </Label>
                 </StackLayout>

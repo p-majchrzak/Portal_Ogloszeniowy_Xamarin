@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik.StronaNewsletter">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame CornerRadius="10" BackgroundColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout WidthRequest="300">
+                    <Label FontSize="17" FontAttributes="Bold"  Text="Zapisz się na newsletter i otrzymuj najnowsze oferty pracy."></Label>
+                    <Entry x:Name="email" Placeholder="Podaj email"></Entry>
+                    <Button x:Name="ZapiszSieBTN" Clicked="ZapiszSieBTN_Clicked" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Zapisz się" WidthRequest="140"></Button>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

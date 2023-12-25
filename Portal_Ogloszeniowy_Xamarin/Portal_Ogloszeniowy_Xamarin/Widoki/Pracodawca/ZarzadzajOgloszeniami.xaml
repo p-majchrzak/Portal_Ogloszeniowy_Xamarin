@@ -4,9 +4,25 @@
              x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracodawca.ZarzadzajOgloszeniami">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button CornerRadius="0" Background="#40356F" BorderColor="#40356F" Text="Odśwież liste" FontSize="17" FontAttributes="Bold" TextColor="White" x:Name="OdswiezBTN" Clicked="OdswiezBTN_Clicked"></Button>
+            <ListView x:Name="listaMoichOgloszen">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem x:Name="Edytuj" Clicked="Edytuj_Clicked" Text="Edytuj"></MenuItem>
+                                <MenuItem x:Name="Usun" Clicked="Usun_Clicked" Text="Usuń"></MenuItem>
+                            </ViewCell.ContextActions>
+                            <StackLayout Orientation="Horizontal">
+                                <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="{Binding NazwaStanowiska}"></Label>
+                                <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="{Binding RodzajUmowy}"></Label>
+                                <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="{Binding WymiarZatrudnienia}"></Label>
+                                <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="{Binding WidelkiWynagrodzenia}"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

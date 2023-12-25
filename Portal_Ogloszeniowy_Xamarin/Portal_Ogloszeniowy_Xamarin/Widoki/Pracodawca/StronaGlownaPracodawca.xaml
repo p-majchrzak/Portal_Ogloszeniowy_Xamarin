@@ -4,9 +4,32 @@
              x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracodawca.StronaGlownaPracodawca" Title="Zgłoszenia">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" x:Name="OdrzucBTN" Clicked="OdrzucBTN_Clicked" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Odrzuć aplikacje"></Button>
+                <Button Grid.Column="1" x:Name="AkceptujBTN" Clicked="AkceptujBTN_Clicked" FontAttributes="Bold" Background="#645FCE" BorderColor="#645FCE" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Zaakceptuj aplikacje"></Button>
+            </Grid>
+            <ScrollView>
+                <ListView x:Name="listaMoichZgloszen">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Aplikujący" x:Name="ZobaczAplikujacegoBTN" Clicked="ZobaczAplikujacegoBTN_Clicked"></MenuItem>
+                                    <MenuItem Text="Ogłoszenie" x:Name="ZobaczOgloszenieBTN" Clicked="ZobaczOgloszenieBTN_Clicked"></MenuItem>
+                                </ViewCell.ContextActions>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="15" Text="{Binding Pracownik_ID,StringFormat='ID osoby która się zgłosiła: {0}'}"></Label>
+                                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="15" Text="{Binding Ogloszenie_ID,StringFormat='ID ogłoszenia: {0}'}"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
