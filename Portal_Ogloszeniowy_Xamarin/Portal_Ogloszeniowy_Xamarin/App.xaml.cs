@@ -29,7 +29,7 @@ namespace Portal_Ogloszeniowy_Xamarin
             {
                 if (bazaDanych == null)
                 {
-                    bazaDanych = new BazaDanych(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"bazaPortal.db3"));
+                    bazaDanych = new BazaDanych(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"BazaPortalOgloszeniowy.db3"));
                 }
                 return bazaDanych;
             }
