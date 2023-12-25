@@ -6,8 +6,8 @@
         <StackLayout>
             <Frame CornerRadius="10" BackgroundColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout WidthRequest="200">
-                    <Entry x:Name="login" Placeholder="Podaj login"></Entry>
-                    <Entry IsPassword="True" x:Name="haslo" Placeholder="Podaj hasło"></Entry>
+                    <Entry Text="login" x:Name="login" Placeholder="Podaj login"></Entry>
+                    <Entry Text="haslo" IsPassword="True" x:Name="haslo" Placeholder="Podaj hasło"></Entry>
                     <Button x:Name="Dodaj" Clicked="Dodaj_Clicked" FontAttributes="Bold" Background="#40356F" BorderColor="#40356F" FontSize="12" CornerRadius="0" TextColor="White" HeightRequest="50" Text="Dodaj" WidthRequest="140"></Button>
                 </StackLayout>
             </Frame>

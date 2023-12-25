@@ -15,11 +15,11 @@
                         <Label Text="Podstawowe dane" FontSize="25" FontAttributes="Bold" Margin="0,10,0,0" HorizontalOptions="Center" />
                         <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                             <Label Text="Podaj imię:" FontSize="15" HorizontalOptions="Center" />
-                            <Entry x:Name="imie" HeightRequest="50" WidthRequest="200" />
+                            <Entry Text="Piotr" x:Name="imie" HeightRequest="50" WidthRequest="200" />
                         </StackLayout>
                         <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                             <Label Text="Podaj nazwisko:" FontSize="15" HorizontalOptions="Center" />
-                            <Entry x:Name="nazwisko" HeightRequest="50" WidthRequest="200" />
+                            <Entry Text="Majchrzak" x:Name="nazwisko" HeightRequest="50" WidthRequest="200" />
                         </StackLayout>
                         <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                             <Label Text="Podaj datę urodzenia:" FontSize="15" HorizontalOptions="Center" />
@@ -27,19 +27,19 @@
                         </StackLayout>
                         <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                             <Label Text="Podaj adres e-mail:" FontSize="15" HorizontalOptions="Center" />
-                            <Entry x:Name="email" HeightRequest="50" WidthRequest="200" />
+                            <Entry Text="majchrzakpiotr@outlook.com" x:Name="email" HeightRequest="50" WidthRequest="200" />
                         </StackLayout>
                         <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                             <Label Text="Podaj numer telefonu:" FontSize="15" HorizontalOptions="Center" />
-                            <Entry x:Name="numerTelefonu" HeightRequest="50" WidthRequest="200" />
+                            <Entry Text="432432432" x:Name="numerTelefonu" HeightRequest="50" WidthRequest="200" />
                         </StackLayout>
                         <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                             <Label Text="Podaj link do zdjęcia:" FontSize="15" HorizontalOptions="Center" />
-                            <Entry x:Name="zdjecie" HeightRequest="50" WidthRequest="200" />
+                            <Entry Text="profilowe.jpg" x:Name="zdjecie" HeightRequest="50" WidthRequest="200" />
                         </StackLayout>
                         <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                             <Label Text="Podaj adres zamieszkania:" FontSize="15" HorizontalOptions="Center" />
-                            <Entry x:Name="adresZamieszkania" HeightRequest="50" Margin="0,0,0,30" WidthRequest="200" />
+                            <Entry Text="Kamienica 420" x:Name="adresZamieszkania" HeightRequest="50" Margin="0,0,0,30" WidthRequest="200" />
                         </StackLayout>
                         <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                             <Label Text="Aktualne stanowisko pracy" FontSize="25" FontAttributes="Bold" Margin="0,10,0,0" HorizontalOptions="Center" />
@@ -49,46 +49,46 @@
                             </StackLayout>
                             <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                                 <Label Text="Opis stanowiska:" FontSize="15" HorizontalOptions="Center" />
-                                <Entry x:Name="opisStanowiska" HeightRequest="50" WidthRequest="200" />
+                                <Entry Text="brak" x:Name="opisStanowiska" HeightRequest="50" WidthRequest="200" />
                                 <Label FontSize="15" Text="*jeśli w obecnym momencie nie zajmujesz żadnego stanowiska," />
                                 <Label FontSize="15" Margin="0,-10,0,0" Text="w obydwu polach wpisz brak" />
                             </StackLayout>
                             <Label Margin="0,30,0,0" Text="Podsumowanie zawodowe" FontSize="25" FontAttributes="Bold" HorizontalOptions="Center" />
                             <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                                 <Label Text="Krótki opis doświadczenia zawodowego:" FontSize="15" HorizontalOptions="Center" />
-                                <Entry x:Name="doswiadczenieZawodowe" HeightRequest="50" WidthRequest="300" />
+                                <Entry Text="brak" x:Name="doswiadczenieZawodowe" HeightRequest="50" WidthRequest="300" />
                             </StackLayout>
                             <Label Margin="0,30,0,0" Text="Wykształcenie" FontSize="25" FontAttributes="Bold" HorizontalOptions="Center" />
                             <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                                 <Label Text="Krótki opis swojej edukacji:" FontSize="15" HorizontalOptions="Center" />
-                                <Entry x:Name="edukacja" HeightRequest="50" WidthRequest="300" />
+                                <Entry Text="Uczyłem się w ZSTiO Limanowa na kierunku Technik Programista" x:Name="edukacja" HeightRequest="50" WidthRequest="300" />
                             </StackLayout>
                             <Label Margin="0,30,0,0" Text="Znajomość języków" FontSize="25" FontAttributes="Bold" HorizontalOptions="Center" />
                             <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                                 <Label Text="Napisz jakie języki znasz wraz z poziomem np. Angielski - C1:" FontSize="15" HorizontalOptions="Center" />
-                                <Entry x:Name="jezyki" HeightRequest="50" WidthRequest="300" />
+                                <Entry Text="Angielski-B2" x:Name="jezyki" HeightRequest="50" WidthRequest="300" />
                             </StackLayout>
                             <Label Margin="0,30,0,0" Text="Dodatkowe umiejętności/kursy" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
                             <StackLayout WidthRequest="300" Margin="0,10,0,30" HorizontalOptions="CenterAndExpand">
                                 <Label Text="Opisz swoje umiejętności/odbyte kursy:" FontSize="15" HorizontalOptions="Center" />
-                                <Entry x:Name="umiejetnosci" HeightRequest="50" WidthRequest="300" />
+                                <Entry Text="Brak" x:Name="umiejetnosci" HeightRequest="50" WidthRequest="300" />
                             </StackLayout>
                             <StackLayout Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                                 <Label Text="Linki" FontSize="25" FontAttributes="Bold" Margin="0,10,0,0" HorizontalOptions="Center" />
                                 <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                                     <Label Text="Wklej linki, które chcesz umieścić w profilu" FontSize="15" HorizontalOptions="Center" />
                                     <Label Margin="0,-10,0,0" Text="w formacie xyz.com,abc.pl,yt.com:" FontSize="15" HorizontalOptions="Center" />
-                                    <Entry x:Name="linki" HeightRequest="50" WidthRequest="200" />
+                                    <Entry Text="github.com/p-majchrzak" x:Name="linki" HeightRequest="50" WidthRequest="200" />
                                 </StackLayout>
                                 <Label Margin="0,30,0,0" Text="Opis" FontSize="25" FontAttributes="Bold" HorizontalOptions="Center" />
                                 <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                                     <Label Text="Napisz opis do swojego profilu:" FontSize="15" HorizontalOptions="Center" />
-                                    <Entry x:Name="opis" HeightRequest="50" WidthRequest="200" />
+                                    <Entry Text="Witam w moim profilu, zachęcam do kontaktu." x:Name="opis" HeightRequest="50" WidthRequest="200" />
                                 </StackLayout>
                                 <Label Margin="0,30,0,0" Text="Hasło" FontSize="25" FontAttributes="Bold" HorizontalOptions="Center" />
                                 <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand">
                                     <Label Text="Ustaw hasło do swojego profilu:" FontSize="15" HorizontalOptions="Center" />
-                                    <Entry x:Name="haslo" HeightRequest="50" WidthRequest="200" IsPassword="True"/>
+                                    <Entry Text="Haslo123" x:Name="haslo" HeightRequest="50" WidthRequest="200" IsPassword="True"/>
                                 </StackLayout>
                             </StackLayout>
                         </StackLayout>

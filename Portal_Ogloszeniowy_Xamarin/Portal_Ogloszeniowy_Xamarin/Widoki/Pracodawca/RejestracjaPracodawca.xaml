@@ -14,26 +14,26 @@
                     <Label Margin="0,10,0,0" Text="Dane firmy" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold"></Label>
                     <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="Center">
                         <Label HorizontalOptions="Center" FontSize="20" Text="Podaj nazwę firmy"></Label>
-                        <Entry x:Name="nazwa" HeightRequest="50" WidthRequest="200"></Entry>
+                        <Entry Text="Microsoft" x:Name="nazwa" HeightRequest="50" WidthRequest="200"></Entry>
                     </StackLayout>
                     <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="Center">
                         <Label HorizontalOptions="Center" FontSize="20" Text="Podaj link do zdjęcia: "></Label>
-                        <Entry x:Name="zdjecie" HeightRequest="50" WidthRequest="200"></Entry>
+                        <Entry Text="microsoft.jpg" x:Name="zdjecie" HeightRequest="50" WidthRequest="200"></Entry>
                     </StackLayout>
                     <Label Margin="0,30,0,0" Text="Lokalizacja" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold"></Label>
                     <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="Center">
                         <Label HorizontalOptions="Center" FontSize="20" Text="Podaj adres firmy:"></Label>
-                        <Entry x:Name="lokalizacja" HeightRequest="50" WidthRequest="200"></Entry>
+                        <Entry Text="Warszawa 22A" x:Name="lokalizacja" HeightRequest="50" WidthRequest="200"></Entry>
                     </StackLayout>
                     <Label Margin="0,30,0,0" Text="E-mail" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold"></Label>
                     <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="Center">
                         <Label HorizontalOptions="Center" FontSize="20" Text="Podaj adres e-mail:"></Label>
-                        <Entry x:Name="email" HeightRequest="50" WidthRequest="200"></Entry>
+                        <Entry Text="hrzaq@outlook.com" x:Name="email" HeightRequest="50" WidthRequest="200"></Entry>
                     </StackLayout>
                     <Label Margin="0,30,0,0" Text="Hasło" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold"></Label>
                     <StackLayout WidthRequest="300" Margin="0,10,0,0" HorizontalOptions="Center">
                         <Label HorizontalOptions="Center" FontSize="20" Text="Ustaw hasło do swojego profilu:"></Label>
-                        <Entry x:Name="haslo" HeightRequest="50" WidthRequest="200" IsPassword="True"></Entry>
+                        <Entry Text="Haslo123" x:Name="haslo" HeightRequest="50" WidthRequest="200" IsPassword="True"></Entry>
                     </StackLayout>
                     <Label Margin="10"></Label>
                 </StackLayout>

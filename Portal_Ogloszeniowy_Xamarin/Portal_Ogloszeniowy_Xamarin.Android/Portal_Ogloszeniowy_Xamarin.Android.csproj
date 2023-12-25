@@ -89,7 +89,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\microsoft.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Portal_Ogloszeniowy_Xamarin\Portal_Ogloszeniowy_Xamarin.csproj">
       <Project>{412A7CDD-7344-47F1-9084-001E01C85FE0}</Project>
@@ -104,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\profilowe.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
