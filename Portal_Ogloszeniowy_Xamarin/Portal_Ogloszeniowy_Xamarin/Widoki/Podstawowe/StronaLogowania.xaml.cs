@@ -96,42 +96,50 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe
         private async void Link_Tapped(object sender, EventArgs e)
         {
             string email = await DisplayPromptAsync("Odzyskiwanie hasła","Podaj adres email: ","Dalej","Odrzuć");
-            if(App.WalidacjaMail(email))
+            if(email != null)
             {
-                string kod = GenerujHaslo(email);
-                string kodWeryfikacyjny = await DisplayPromptAsync("Odzyskiwanie hasła", "Podaj kod weryfikacyjny: ", "Dalej", "Odrzuć");
-                if(kod == kodWeryfikacyjny)
+                if (App.WalidacjaMail(email))
                 {
-                    List<PracownikKlasa> pracownicy = App.BazaDanych.Wypisz<PracownikKlasa>();
-                    foreach(PracownikKlasa pracownik in pracownicy)
+                    string kod = GenerujHaslo(email);
+                    string kodWeryfikacyjny = await DisplayPromptAsync("Odzyskiwanie hasła", "Podaj kod weryfikacyjny: ", "Dalej", "Odrzuć");
+                    if (kod == kodWeryfikacyjny)
                     {
-                        if(pracownik.Email == email)
+                        List<PracownikKlasa> pracownicy = App.BazaDanych.Wypisz<PracownikKlasa>();
+                        foreach (PracownikKlasa pracownik in pracownicy)
                         {
-                            App.WyslijEmail(email, "Twoje hasło do konta w serwisie Poszukujemy.", "Oto twoje hasło: " + pracownik.Haslo + "\nPozdrawiamy zespół poszukujemy!");
-                            _ = DisplayAlert("Informacja", "Otrzymałeś email z treścią hasła!", "Ok");
-                            break;
+                            if (pracownik.Email == email)
+                            {
+                                App.WyslijEmail(email, "Twoje hasło do konta w serwisie Poszukujemy.", "Oto twoje hasło: " + pracownik.Haslo + "\nPozdrawiamy zespół poszukujemy!");
+                                _ = DisplayAlert("Informacja", "Otrzymałeś email z treścią hasła!", "Ok");
+                                break;
+                            }
+                        }
+                        List<Firma> firmy = App.BazaDanych.Wypisz<Firma>();
+                        foreach (Firma firma in firmy)
+                        {
+                            if (firma.Email == email)
+                            {
+                                App.WyslijEmail(email, "Twoje hasło do konta w serwisie Poszukujemy.", "Oto twoje hasło: " + firma.Haslo + "\nPozdrawiamy zespół poszukujemy!");
+                                _ = DisplayAlert("Informacja", "Otrzymałeś email z treścią hasła!", "Ok");
+                                break;
+                            }
                         }
                     }
-                    List<Firma> firmy = App.BazaDanych.Wypisz<Firma>();
-                    foreach (Firma firma in firmy)
+                    else
                     {
-                        if (firma.Email == email)
-                        {
-                            App.WyslijEmail(email, "Twoje hasło do konta w serwisie Poszukujemy.", "Oto twoje hasło: " + firma.Haslo + "\nPozdrawiamy zespół poszukujemy!");
-                            _ = DisplayAlert("Informacja", "Otrzymałeś email z treścią hasła!", "Ok");
-                            break;
-                        }
+                        _ = DisplayAlert("Informacja", "Błędny kod weryfikacyjny!", "Ok");
                     }
                 }
                 else
                 {
-                    _ = DisplayAlert("Informacja", "Błędny kod weryfikacyjny!", "Ok");
+                    _ = DisplayAlert("Informacja", "Błędny email!", "Ok");
                 }
             }
             else
             {
-                _=DisplayAlert("Informacja", "Błędny email!", "Ok");
+                _ = DisplayAlert("Informacja", "Błędny email!", "Ok");
             }
+
         }
     }
 }
