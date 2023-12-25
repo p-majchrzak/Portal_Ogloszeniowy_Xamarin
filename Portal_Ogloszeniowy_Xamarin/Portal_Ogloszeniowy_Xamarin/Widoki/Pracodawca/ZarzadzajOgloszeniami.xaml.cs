@@ -48,6 +48,14 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Pracodawca
                             App.BazaDanych.Usun(zgloszenie);
                         }
                     }
+                    List<Zapisane> listaZapisanych = App.BazaDanych.Wypisz<Zapisane>();
+                    foreach (Zapisane zapisane in listaZapisanych)
+                    {
+                        if (zapisane.Ogloszenie == ogloszenie.ID)
+                        {
+                            App.BazaDanych.Usun(zapisane);
+                        }
+                    }
                     App.BazaDanych.Usun(ogloszenie);
                     _ = DisplayAlert("Informacja", "Usunięto " + ogloszenie.NazwaStanowiska + ".", "Ok");
                     Odswiez();

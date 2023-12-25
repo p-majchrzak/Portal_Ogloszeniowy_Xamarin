@@ -66,6 +66,9 @@
     <EmbeddedResource Update="Widoki\Podstawowe\StronaWyboruRejestracjiLubLogowania.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Widoki\Pracownik\WizytowkaAplikacji.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Widoki\Podstawowe\WyborTypuKontaPrzyRejestracji.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

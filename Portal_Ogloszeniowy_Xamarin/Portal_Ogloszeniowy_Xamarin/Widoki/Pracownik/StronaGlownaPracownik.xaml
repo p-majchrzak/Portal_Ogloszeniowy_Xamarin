@@ -1,13 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik.StronaGlownaPracownik" Title="Strona główna">
+             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik.StronaGlownaPracownik" Title="Ogłoszenia">
 
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout Orientation="Vertical">
-                <SearchBar x:Name="Wyszukiwanie" TextChanged="Wyszukiwanie_TextChanged" Placeholder="Wpisz nazwę stanowiska"></SearchBar>
-            </StackLayout>
+            <Frame>
+                <StackLayout>
+                    <StackLayout Orientation="Vertical">
+                        <SearchBar x:Name="Wyszukiwanie" TextChanged="Wyszukiwanie_TextChanged" Placeholder="Wpisz nazwę stanowiska"></SearchBar>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            
             <ScrollView>
                 <CollectionView x:Name="listaOgloszen" SelectionMode="Single">
                 <CollectionView.ItemTemplate>

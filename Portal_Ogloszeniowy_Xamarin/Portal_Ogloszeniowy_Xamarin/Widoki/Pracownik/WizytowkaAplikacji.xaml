@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik.WizytowkaAplikacji" Title="Poszukujemy">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame Margin="5" HorizontalOptions="CenterAndExpand" CornerRadius="10" WidthRequest="300">
+                    <StackLayout Orientation="Horizontal">
+                        <Label HorizontalOptions="CenterAndExpand" TextColor="#40356F" Text="Zalogowano jako: " FontAttributes="Bold" FontSize="17"></Label>
+                        <Label x:Name="daneOsobowe" HorizontalOptions="CenterAndExpand" TextColor="#40356F" Text="Imie Nazwisko" FontSize="17"></Label>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="5" HorizontalOptions="CenterAndExpand" CornerRadius="10" WidthRequest="300">
+                    <StackLayout>
+                        <Image Source="logo.png" WidthRequest="200" HeightRequest="200"></Image>
+                        <Label HorizontalOptions="CenterAndExpand" TextColor="#40356F" Text="Witamy w aplikacji Poszukujemy!" FontAttributes="Bold" FontSize="20"></Label>
+                    </StackLayout>
+                </Frame>
+                <StackLayout Orientation="Horizontal" WidthRequest="300" Margin="25,5,25,5">
+                    <Frame HorizontalOptions="CenterAndExpand" CornerRadius="10" Margin="0" WidthRequest="130">
+                        <StackLayout>
+                            <Label HorizontalOptions="CenterAndExpand" TextColor="#40356F" Text="Statystki aplikacji" FontAttributes="Bold" FontSize="15"></Label>
+                            <Label x:Name="iloscSzukajacychPracy" HorizontalOptions="StartAndExpand" TextColor="#40356F" Text="" FontSize="12"></Label>
+                            <Label x:Name="iloscOgloszenOPrace" HorizontalOptions="StartAndExpand" TextColor="#40356F" Text="" FontSize="12"></Label>
+                            <Label x:Name="iloscFirm" HorizontalOptions="StartAndExpand" TextColor="#40356F" Text="" FontSize="12"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HorizontalOptions="CenterAndExpand" CornerRadius="10" Margin="0" WidthRequest="130">
+                        <StackLayout>
+                            <Label HorizontalOptions="CenterAndExpand" TextColor="#40356F" Text="Twoje statystki" FontAttributes="Bold" FontSize="15"></Label>
+                            <Label x:Name="iloscZgloszen" HorizontalOptions="StartAndExpand" TextColor="#40356F" Text="" FontSize="12"></Label>
+                            <Label x:Name="iloscZapisanychOfet" HorizontalOptions="StartAndExpand" TextColor="#40356F" Text="" FontSize="12"></Label>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <Frame Margin="5" HorizontalOptions="CenterAndExpand" CornerRadius="10" WidthRequest="300">
+                    <StackLayout>
+                        <Label HorizontalOptions="CenterAndExpand" TextColor="#40356F" Text="Dlaczego jesteśmy najlepsi na rynku?" FontAttributes="Bold" FontSize="17"></Label>
+                        <Label HorizontalOptions="StartAndExpand" TextColor="#40356F" Text="•posiadamy czytelną aplikację, łatwą w obsłudze" FontSize="14"></Label>
+                        <Label HorizontalOptions="StartAndExpand" TextColor="#40356F" Text="•posiadamy szeroki wybór ofert pracy" FontSize="14"></Label>
+                        <Label HorizontalOptions="StartAndExpand" TextColor="#40356F" Text="•dzięki nam łatwo znajdziesz pracę" FontSize="14"></Label>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

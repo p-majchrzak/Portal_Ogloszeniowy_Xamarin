@@ -33,13 +33,14 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik
             {
                 MenuItems = new ObservableCollection<MenuPracownikFlyoutMenuItem>(new[]
                 {
-                    new MenuPracownikFlyoutMenuItem { Id = 0, Title = "Strona główna", TargetType=typeof(StronaGlownaPracownik)},
-                    new MenuPracownikFlyoutMenuItem { Id = 1, Title = "Wyświetl mój profil",TargetType = typeof(WyswietlMojProfil) },
-                    new MenuPracownikFlyoutMenuItem { Id = 2, Title = "Zarządzanie kontem",TargetType = typeof(ZarzadzanieKontem) },
-                    new MenuPracownikFlyoutMenuItem { Id = 3, Title = "Moje zgłoszenia",TargetType = typeof(MojeZgloszenia) },
-                    new MenuPracownikFlyoutMenuItem { Id = 4, Title = "Zapisane oferty",TargetType = typeof(ZapisaneOferty) },
-                    new MenuPracownikFlyoutMenuItem { Id = 5, Title = "Newsletter",TargetType = typeof(StronaNewsletter) },
-                    new MenuPracownikFlyoutMenuItem { Id = 6, Title = "Wyloguj",TargetType= typeof(StronaWyboruRejestracjiLubLogowania) },
+                    new MenuPracownikFlyoutMenuItem { Id = 0, Title = "Strona główna", TargetType=typeof(WizytowkaAplikacji)},
+                    new MenuPracownikFlyoutMenuItem { Id = 1, Title = "Ogłoszenia", TargetType=typeof(StronaGlownaPracownik)},
+                    new MenuPracownikFlyoutMenuItem { Id = 2, Title = "Wyświetl mój profil",TargetType = typeof(WyswietlMojProfil) },
+                    new MenuPracownikFlyoutMenuItem { Id = 3, Title = "Zarządzanie kontem",TargetType = typeof(ZarzadzanieKontem) },
+                    new MenuPracownikFlyoutMenuItem { Id = 4, Title = "Moje zgłoszenia",TargetType = typeof(MojeZgloszenia) },
+                    new MenuPracownikFlyoutMenuItem { Id = 5, Title = "Zapisane oferty",TargetType = typeof(ZapisaneOferty) },
+                    new MenuPracownikFlyoutMenuItem { Id = 6, Title = "Newsletter",TargetType = typeof(StronaNewsletter) },
+                    new MenuPracownikFlyoutMenuItem { Id = 7, Title = "Wyloguj",TargetType= typeof(StronaWyboruRejestracjiLubLogowania) },
                 });
             }
 
