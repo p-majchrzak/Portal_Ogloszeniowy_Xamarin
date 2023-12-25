@@ -28,7 +28,7 @@
                                 <SwipeItem x:Name="Usun" Clicked="Usun_Clicked" BackgroundColor="#40356F"  Text="Usuń"></SwipeItem>
                             </SwipeView.LeftItems>
                             <SwipeView.RightItems>
-                                <SwipeItem x:Name="Zobacz" Clicked="Zobacz_Clicked" BackgroundColor="#40356F" Text="Zobacz"></SwipeItem>
+                                <SwipeItem  x:Name="Zobacz" Clicked="Zobacz_Clicked" BackgroundColor="#40356F" Text="Zobacz"></SwipeItem>
                             </SwipeView.RightItems>
                         </SwipeView>
                     </DataTemplate>

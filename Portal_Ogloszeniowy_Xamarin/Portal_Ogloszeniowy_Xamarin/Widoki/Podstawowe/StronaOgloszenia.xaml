@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe.StronaOgloszenia">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10">
+                <Frame WidthRequest="70" HeightRequest="70" CornerRadius="90">
+                    <Image WidthRequest="70" HeightRequest="70" x:Name="Zdjecie"></Image>
+                </Frame>
+                <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand">
+                    <Label x:Name="nazwaFirmy" FontSize="20" FontAttributes="Bold" Text="Nazwa firmy"></Label>
+                    <Label x:Name="adresFirmy" FontSize="15" Text="adres firmy" Margin="0,0,0,5"></Label>
+                </StackLayout>
+                <Button x:Name="zglosSieBTN" Clicked="zglosSieBTN_Clicked"  CornerRadius="0" Margin="0,0,0,5" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" FontSize="14" FontAttributes="Bold"  Background="#645FCE" BorderColor="#645FCE" TextColor="White" Text="Zgłoś się" WidthRequest="100" HeightRequest="50"></Button>
+            </StackLayout>
+            <StackLayout>
+                <Frame BackgroundColor="White" Margin="10" CornerRadius="20">
+                    <StackLayout>
+                        <Label HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Text="Kontakt z firmą"></Label>
+                        <Label x:Name="email" HorizontalOptions="CenterAndExpand" FontSize="15"></Label>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+                    <Frame BackgroundColor="White" Margin="10" CornerRadius="20">
+                        <StackLayout>
+                            <Label HorizontalOptions="CenterAndExpand" Text="Podstawowe dane" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="NazwaStanowiska" FontSize="15"></Label>
+                            <Label x:Name="PoziomStanowiska" FontSize="15"></Label>
+                            <Label HorizontalOptions="CenterAndExpand" Text="Ważne informacje" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="RodzajUmowy" FontSize="15"></Label>
+                            <Label x:Name="WymiarZatrudnienia" FontSize="15"></Label>
+                            <Label x:Name="RodzajPracy" FontSize="15"></Label>
+                            <Label HorizontalOptions="CenterAndExpand" Text="Wynagrodzenie" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="WidelkiWynagrodzenia" FontSize="15"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame BackgroundColor="White" Margin="10" CornerRadius="20">
+                        <StackLayout>
+                            <Label HorizontalOptions="CenterAndExpand" Text="Czas pracy" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="DniPracy" FontSize="15"></Label>
+                            <Label x:Name="GodzinyPracy" FontSize="15"></Label>
+                            <Label HorizontalOptions="CenterAndExpand" Text="Obowiązki" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="ZakresObowiazkow" FontSize="15"></Label>
+                            <Label HorizontalOptions="CenterAndExpand" Text="Benefity" FontSize="17" FontAttributes="Bold"></Label>
+                            <Label x:Name="Benefity" FontSize="15"></Label>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

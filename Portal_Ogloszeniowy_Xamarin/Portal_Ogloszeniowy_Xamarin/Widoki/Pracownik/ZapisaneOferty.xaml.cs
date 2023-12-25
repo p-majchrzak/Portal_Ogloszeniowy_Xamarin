@@ -1,4 +1,5 @@
 ﻿using Portal_Ogloszeniowy_Xamarin.Klasy;
+using Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -71,7 +72,15 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik
 
         private void Zobacz_Clicked(object sender, EventArgs e)
         {
-
+            Ogloszenie ogloszenie = listaOgloszen.SelectedItem as Ogloszenie;
+            if (ogloszenie != null)
+            {
+                Navigation.PushAsync(new StronaOgloszenia(ogloszenie));
+            }
+            else
+            {
+                DisplayAlert("Informacja", "Należy nacisnąć na ogłoszenie!", "Ok");
+            }
         }
     }
 }

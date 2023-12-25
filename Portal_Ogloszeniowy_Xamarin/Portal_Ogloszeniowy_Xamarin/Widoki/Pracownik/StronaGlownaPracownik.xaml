@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Orientation="Vertical">
-                <SearchBar Placeholder="Wpisz ofertę"></SearchBar>
+                <SearchBar x:Name="Wyszukiwanie" TextChanged="Wyszukiwanie_TextChanged" Placeholder="Wpisz nazwę stanowiska"></SearchBar>
             </StackLayout>
             <ScrollView>
                 <CollectionView x:Name="listaOgloszen" SelectionMode="Single">
