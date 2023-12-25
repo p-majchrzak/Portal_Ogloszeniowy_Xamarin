@@ -108,6 +108,9 @@
     <EmbeddedResource Update="Widoki\Pracownik\StronaGlownaPracownik.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Widoki\Pracownik\StronaNewsletter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Widoki\Pracownik\WyswietlMojProfil.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

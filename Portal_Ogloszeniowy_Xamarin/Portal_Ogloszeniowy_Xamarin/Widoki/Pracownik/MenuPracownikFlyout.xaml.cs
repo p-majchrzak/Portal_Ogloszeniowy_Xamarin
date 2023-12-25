@@ -38,7 +38,8 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik
                     new MenuPracownikFlyoutMenuItem { Id = 2, Title = "Zarządzanie kontem",TargetType = typeof(ZarzadzanieKontem) },
                     new MenuPracownikFlyoutMenuItem { Id = 3, Title = "Moje zgłoszenia",TargetType = typeof(MojeZgloszenia) },
                     new MenuPracownikFlyoutMenuItem { Id = 4, Title = "Zapisane oferty",TargetType = typeof(ZapisaneOferty) },
-                    new MenuPracownikFlyoutMenuItem { Id = 5, Title = "Wyloguj",TargetType= typeof(StronaWyboruRejestracjiLubLogowania) },
+                    new MenuPracownikFlyoutMenuItem { Id = 5, Title = "Newsletter",TargetType = typeof(StronaNewsletter) },
+                    new MenuPracownikFlyoutMenuItem { Id = 6, Title = "Wyloguj",TargetType= typeof(StronaWyboruRejestracjiLubLogowania) },
                 });
             }
 

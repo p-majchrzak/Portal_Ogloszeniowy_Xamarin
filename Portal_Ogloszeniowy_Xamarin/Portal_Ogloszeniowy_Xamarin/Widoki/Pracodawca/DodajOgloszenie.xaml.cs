@@ -88,7 +88,11 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Pracodawca
             {
                 App.BazaDanych.Zapisz(ogloszenie);
                 DisplayAlert("Informacja", "Dodano ogłoszenie!", "Ok");
-
+                List<Newsletter> listaOsob = App.BazaDanych.Wypisz<Newsletter>();
+                for (int i = 0; i < listaOsob.Count; i++)
+                {
+                    App.WyslijEmail(listaOsob[i].Email, "Dodano nowe ogłoszenie o pracę!", "Wyszukaj go pod frazą '" + ogloszenie.NazwaStanowiska + "'.\nPozdrawiamy zespół Poszukujemy!");
+                }
                 nazwaStanowisko.Text = ""; poziomStanowiska.Text = "";
                 rodzajUmowy.Text = ""; wymiarZatrudnienia.Text = ""; 
                 rodzajPracy.Text = ""; widelkiWynagrodzenia.Text = ""; 

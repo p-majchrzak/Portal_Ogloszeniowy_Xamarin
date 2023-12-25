@@ -75,7 +75,7 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Pracownik
             Ogloszenie ogloszenie = listaOgloszen.SelectedItem as Ogloszenie;
             if (ogloszenie != null)
             {
-                Navigation.PushAsync(new StronaOgloszenia(ogloszenie));
+                Navigation.PushAsync(new StronaOgloszenia(ogloszenie,true));
             }
             else
             {
