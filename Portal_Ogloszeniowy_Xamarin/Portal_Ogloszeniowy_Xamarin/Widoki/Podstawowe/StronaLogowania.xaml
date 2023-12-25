@@ -16,7 +16,7 @@
                     <Label Text="Nie pamiętasz hasła?"></Label>
                     <Label HorizontalOptions="Center" Text="Odzyskaj je." TextColor="#0066CC">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer/>
+                            <TapGestureRecognizer x:Name="Link" Tapped="Link_Tapped"/>
                         </Label.GestureRecognizers>
                     </Label>
                 </StackLayout>
