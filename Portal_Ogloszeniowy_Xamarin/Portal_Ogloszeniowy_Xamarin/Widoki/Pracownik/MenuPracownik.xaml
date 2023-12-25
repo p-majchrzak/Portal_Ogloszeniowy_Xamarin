@@ -9,7 +9,7 @@
   <FlyoutPage.Detail>
     <NavigationPage>
       <x:Arguments>
-        <pages:StronaGlownaPracownik />
+        <pages:WizytowkaAplikacji />
       </x:Arguments>
     </NavigationPage>
   </FlyoutPage.Detail>
