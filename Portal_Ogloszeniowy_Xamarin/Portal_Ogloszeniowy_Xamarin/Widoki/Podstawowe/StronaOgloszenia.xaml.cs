@@ -18,7 +18,8 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe
         public StronaOgloszenia (Ogloszenie ogloszenie)
 		{
 			InitializeComponent();
-			Title = ogloszenie.NazwaStanowiska;
+            zglosSieBTN.IsVisible = true;
+            Title = ogloszenie.NazwaStanowiska;
             globalneOgloszenie = ogloszenie;
             NazwaStanowiska.Text = "Nazwa stanowiska: " + ogloszenie.NazwaStanowiska;
             PoziomStanowiska.Text = "Poziom stanowiska: " + ogloszenie.PoziomStanowiska;
@@ -45,7 +46,37 @@ namespace Portal_Ogloszeniowy_Xamarin.Widoki.Podstawowe
             email.Text = "E-mail: " + firma.Email;
             Zdjecie.Source = firma.Zdjecie;
         }
-
+        public StronaOgloszenia(Ogloszenie ogloszenie, bool wybor)
+        {
+            InitializeComponent();
+            zglosSieBTN.IsVisible = false;
+            Title = ogloszenie.NazwaStanowiska;
+            globalneOgloszenie = ogloszenie;
+            NazwaStanowiska.Text = "Nazwa stanowiska: " + ogloszenie.NazwaStanowiska;
+            PoziomStanowiska.Text = "Poziom stanowiska: " + ogloszenie.PoziomStanowiska;
+            RodzajUmowy.Text = "Rodzaj umowy: " + ogloszenie.RodzajUmowy;
+            WymiarZatrudnienia.Text = "Wymiar zatrudnienia: " + ogloszenie.WymiarZatrudnienia;
+            RodzajPracy.Text = "Rodzaj pracy: " + ogloszenie.RodzajPracy;
+            WidelkiWynagrodzenia.Text = "Widełki wynagrodzenia: " + ogloszenie.WidelkiWynagrodzenia;
+            DniPracy.Text = "Dni pracy: " + ogloszenie.DniPracy;
+            GodzinyPracy.Text = "Godziny pracy: " + ogloszenie.GodzinyPracy;
+            ZakresObowiazkow.Text = "Zakres obowiązków: " + ogloszenie.ZakresObowiazkow;
+            Benefity.Text = "Benefity: " + ogloszenie.Benefity;
+            List<Firma> listaFirm = App.BazaDanych.Wypisz<Firma>();
+            Firma firma = new Firma();
+            for (int i = 0; i < listaFirm.Count; i++)
+            {
+                if (ogloszenie.Firma_ID == listaFirm[i].ID)
+                {
+                    firma = listaFirm[i];
+                    break;
+                }
+            }
+            nazwaFirmy.Text = firma.Nazwa;
+            adresFirmy.Text = firma.Adres;
+            email.Text = "E-mail: " + firma.Email;
+            Zdjecie.Source = firma.Zdjecie;
+        }
         private void zglosSieBTN_Clicked(object sender, EventArgs e)
         {
             List<Zgloszenie> listaZgloszen = App.BazaDanych.Wypisz<Zgloszenie>();
